@@ -1,31 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Hands | Bathroom Remodeling Specialists</title>
 
-    <title>Right Hands | Bathroom Remodeling</title>
+    <meta name="description"
+        content="Right Hands provides premium bathroom remodeling services in County Carlow. Residential renovations, commercial washrooms, and accessible bathroom installations.">
 
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <section class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="text-center px-6">
-            <h1 class="text-5xl font-bold mb-6">
-                Luxury Bathroom Remodeling
-            </h1>
 
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-                Transform your bathroom with expert craftsmanship,
-                modern design, and reliable service.
-            </p>
+<body class="bg-white text-gray-900">
 
-            <button class="bg-gray-900 text-white px-8 py-4 rounded-xl hover:bg-black transition">
-                Get Free Estimate
-            </button>
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="flex items-center justify-between h-20">
+
+                <!-- LOGO -->
+                <a href="#" class="text-2xl font-bold tracking-tight">
+                    Right Hands
+                </a>
+
+                <!-- DESKTOP NAV -->
+                <nav class="hidden lg:flex items-center gap-8">
+
+                    <a href="#" class="nav-link">Home</a>
+
+                    <!-- DROPDOWN -->
+                    <div class="relative group">
+
+                        <button class="nav-link flex items-center gap-2">
+                            Services
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition group-hover:rotate-180"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-3">
+
+                            <a href="/residential.html" class="dropdown-item">
+                                Residential Bathroom Remodeling
+                            </a>
+
+                            <a href="/commercial.html" class="dropdown-item">
+                                Commercial Washroom Renovations
+                            </a>
+
+                            <a href="/disabled.html" class="dropdown-item">
+                                Accessible & Mobility Bathrooms
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="/our-work.html" class="nav-link">Our Work</a>
+                    <a href="/about.html" class="nav-link">About Us</a>
+                    <a href="/testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden lg:flex">
+                    <a href="#"
+                        class="bg-gray-900 text-white px-6 py-3 rounded-xl hover:bg-black transition duration-300 font-medium">
+                        Get Quote
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="menu-btn" class="lg:hidden flex flex-col justify-center gap-1.5 w-10 h-10">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+
+            </div>
         </div>
-    </section>
+
+
+        <!-- MOBILE NAVIGATION -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden">
+
+            <div class="px-6 py-8 flex flex-col gap-2">
+
+                <a href="#" class="mobile-link">Home</a>
+
+                <!-- MOBILE DROPDOWN -->
+                <div>
+                    <button id="mobile-services-btn" class="mobile-link w-full flex items-center justify-between">
+                        Services
+
+                        <svg id="mobile-arrow" xmlns="http://www.w3.org/2000/svg"
+                            class="w-5 h-5 transition duration-300" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div id="mobile-services" class="hidden pl-4 mt-2 flex flex-col gap-2 border-l border-gray-200">
+                        <a href="/residential.html" class="mobile-sub-link">Residential Bathrooms</a>
+                        <a href="/commercial.html" class="mobile-sub-link">Commercial Renovations</a>
+                        <a href="/disabled.html" class="mobile-sub-link">Accessible Bathrooms</a>
+                    </div>
+                </div>
+
+                <a href="/our-work.html" class="mobile-link">Our Work</a>
+                <a href="/about.html" class="mobile-link">About Us</a>
+                <a href="/testimonials.html" class="mobile-link">Testimonials</a>
+                <a href="/contact.html" class="mobile-link">Contact</a>
+
+                <a href="#"
+                    class="mt-6 bg-gray-900 text-white text-center px-6 py-4 rounded-xl font-medium hover:bg-black transition">
+                    Get Quote
+                </a>
+
+            </div>
+        </div>
+
+    </header>
+    <script src="/js/nav.js"></script>
 </body>
+
 </html>
