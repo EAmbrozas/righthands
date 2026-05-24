@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Hands | Bathroom Remodeling Specialists</title>
+
+    <meta name="description"
+        content="Right Hands provides premium bathroom remodeling services in County Carlow. Residential renovations, commercial washrooms, and accessible bathroom installations.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="flex items-center justify-between h-20">
+
+                <!-- LOGO -->
+                <a href="./index.html" class="text-2xl font-bold tracking-tight">
+                    <img src="./images/logo.png" alt="Right Hands Logo" class="w-36 md:w-40 lg:w-44 drop-shadow-2xl">
+                </a>
+
+                <!-- DESKTOP NAV -->
+                <nav class="hidden lg:flex items-center gap-8">
+
+                    <a href="./index.html" class="nav-link">Home</a>
+
+                    <!-- DROPDOWN -->
+                    <div class="relative group">
+
+                        <button class="nav-link flex items-center gap-2">
+                            Services
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition group-hover:rotate-180"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-3">
+
+                            <a href="./residential.html" class="dropdown-item">
+                                Residential Renovations
+                            </a>
+
+                            <a href="./commercial.html" class="dropdown-item">
+                                Commercial Renovations
+                            </a>
+
+                            <a href="./tiling-flooring.html" class="dropdown-item">
+                                Tiling & Flooring
+                            </a>
+
+                            <a href="./disabled.html" class="dropdown-item">
+                                Accessible Solutions
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="./our-work.html" class="nav-link">Our Work</a>
+                    <a href="./about.html" class="nav-link">About Us</a>
+                    <a href="./testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="./contact.html" class="nav-link">Contact</a>
+
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden lg:flex">
+                    <a href="#"
+                        class="bg-gray-900 text-white px-6 py-3 rounded-xl hover:bg-black transition duration-300 font-medium">
+                        Get Quote
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="menu-btn" class="lg:hidden flex flex-col justify-center gap-1.5 w-10 h-10">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- MOBILE NAVIGATION -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden">
+
+            <div class="px-6 py-8 flex flex-col gap-2">
+
+                <a href="./index.html" class="mobile-link">Home</a>
+
+                <!-- MOBILE DROPDOWN -->
+                <div>
+                    <button id="mobile-services-btn" class="mobile-link w-full flex items-center justify-between">
+                        Services
+
+                        <svg id="mobile-arrow" xmlns="http://www.w3.org/2000/svg"
+                            class="w-5 h-5 transition duration-300" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div id="mobile-services" class="hidden pl-4 mt-2 flex flex-col gap-2 border-l border-gray-200">
+                        <a href="./residential.html" class="mobile-sub-link">Residential Renovations</a>
+                        <a href="./commercial.html" class="mobile-sub-link">Commercial Renovations</a>
+                        <a href="./tiling-flooring.html" class="mobile-sub-link">Tiling & Flooring</a>
+                        <a href="./disabled.html" class="mobile-sub-link">Accessible Solutions</a>
+                    </div>
+                </div>
+
+                <a href="./our-work.html" class="mobile-link">Our Work</a>
+                <a href="./about.html" class="mobile-link">About Us</a>
+                <a href="./testimonials.html" class="mobile-link">Testimonials</a>
+                <a href="./contact.html" class="mobile-link">Contact</a>
+
+                <a href="#"
+                    class="mt-6 bg-gray-900 text-white text-center px-6 py-4 rounded-xl font-medium hover:bg-black transition">
+                    Get Quote
+                </a>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+       <!-- TILING & FLOORING PAGE -->
+<section class="relative bg-gray-50 py-28 lg:py-36 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- HERO -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-28">
+
+            <!-- CONTENT -->
+            <div>
+                <span class="inline-flex items-center gap-3 mb-5 text-sm font-semibold tracking-[0.24em] uppercase text-gray-500">
+                    <span class="w-12 h-[2px] bg-red-600"></span>
+                    Tiling & Flooring
+                </span>
+
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 mb-8">
+                    Precision Tiling<br>
+                    & Flooring.
+                </h1>
+
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-10">
+                    High-quality tiling and flooring installations finished with accuracy,
+                    durability, and clean professional workmanship.
+                </p>
+
+                <a href="./contact.html"
+                    class="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-xl font-semibold hover:bg-red-600 transition duration-300 shadow-lg">
+                    Get Free Quote
+                </a>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="./images/tiling-flooring.webp"
+                        alt="Tiling and flooring installation"
+                        class="w-full h-[420px] md:h-[560px] object-cover">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- WHAT WE DO -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-28">
+
+            <!-- IMAGE -->
+            <div class="rounded-3xl overflow-hidden shadow-xl">
+                <img src="./images/tiling-flooring-detail.webp"
+                    alt="Professional floor tiling work"
+                    class="w-full h-[380px] md:h-[500px] object-cover">
+            </div>
+
+            <!-- CONTENT -->
+            <div>
+                <span class="inline-block mb-4 text-sm font-semibold tracking-[0.22em] uppercase text-red-600">
+                    What We Offer
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-8">
+                    Clean Finishes.<br>
+                    Built To Last.
+                </h2>
+
+                <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                    From bathroom tiling to flooring installations and full surface upgrades,
+                    we focus on preparation, precision, and durable finishes that stand the test of time.
+                </p>
+
+                <div class="space-y-5">
+
+                    <div class="flex items-start gap-4">
+                        <span class="w-7 h-7 rounded-full bg-red-600 text-white flex items-center justify-center shrink-0 mt-1">✓</span>
+                        <p class="text-gray-700 font-medium">Wall and floor tiling installations</p>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="w-7 h-7 rounded-full bg-red-600 text-white flex items-center justify-center shrink-0 mt-1">✓</span>
+                        <p class="text-gray-700 font-medium">Bathroom, kitchen, hallway, and utility room tiling</p>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="w-7 h-7 rounded-full bg-red-600 text-white flex items-center justify-center shrink-0 mt-1">✓</span>
+                        <p class="text-gray-700 font-medium">Flooring preparation, levelling, and finishing work</p>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="w-7 h-7 rounded-full bg-red-600 text-white flex items-center justify-center shrink-0 mt-1">✓</span>
+                        <p class="text-gray-700 font-medium">Tile replacement, repairs, and surface upgrades</p>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="w-7 h-7 rounded-full bg-red-600 text-white flex items-center justify-center shrink-0 mt-1">✓</span>
+                        <p class="text-gray-700 font-medium">Modern finishes for residential and commercial spaces</p>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="w-7 h-7 rounded-full bg-red-600 text-white flex items-center justify-center shrink-0 mt-1">✓</span>
+                        <p class="text-gray-700 font-medium">Clean, tidy, and carefully finished workmanship</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- PROCESS -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <!-- CONTENT -->
+            <div>
+                <span class="inline-block mb-4 text-sm font-semibold tracking-[0.22em] uppercase text-red-600">
+                    Our Process
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-8">
+                    Prepared Properly.<br>
+                    Finished Precisely.
+                </h2>
+
+                <div class="space-y-6">
+
+                    <div class="flex gap-5">
+                        <span class="w-12 h-12 rounded-2xl bg-red-600 text-white flex items-center justify-center shrink-0 font-bold">1</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Consultation</h3>
+                            <p class="text-gray-600 leading-relaxed">We discuss the space, your preferred finish, and the practical needs of the area.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5">
+                        <span class="w-12 h-12 rounded-2xl bg-red-600 text-white flex items-center justify-center shrink-0 font-bold">2</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Surface Preparation</h3>
+                            <p class="text-gray-600 leading-relaxed">We prepare, level, and check the surface properly before installation begins.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5">
+                        <span class="w-12 h-12 rounded-2xl bg-red-600 text-white flex items-center justify-center shrink-0 font-bold">3</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Material Selection</h3>
+                            <p class="text-gray-600 leading-relaxed">We help you choose suitable tiles, flooring, grout, trims, and finishes for your project.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5">
+                        <span class="w-12 h-12 rounded-2xl bg-red-600 text-white flex items-center justify-center shrink-0 font-bold">4</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Installation</h3>
+                            <p class="text-gray-600 leading-relaxed">The tiling or flooring is installed carefully with attention to alignment, spacing, and detail.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5">
+                        <span class="w-12 h-12 rounded-2xl bg-red-600 text-white flex items-center justify-center shrink-0 font-bold">5</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Final Finish</h3>
+                            <p class="text-gray-600 leading-relaxed">We complete the final checks, clean the work area, and make sure the finish is right.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="rounded-3xl overflow-hidden shadow-xl">
+                <img src="./images/tiling-flooring-process.webp"
+                    alt="Tiling and flooring process"
+                    class="w-full h-[420px] md:h-[620px] object-cover">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        
+    </main>
+    <!-- FOOTER -->
+        <footer class="bg-gray-900 text-white">
+
+            <!-- CTA -->
+            <div class="border-b border-white/10">
+                <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 text-center">
+
+                    <span class="inline-block mb-4 text-sm font-semibold tracking-[0.25em] uppercase text-red-500">
+                        Start Your Renovation
+                    </span>
+
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                        Ready To Upgrade Your Space?
+                    </h2>
+
+                    <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                        Contact Right Hands today for a free consultation and quote on your next renovation project.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="./contact.html"
+                            class="bg-red-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-red-700 transition text-center">
+                            Get Free Quote
+                        </a>
+
+                        <a href="tel:+353894516403"
+                            class="border border-white/20 px-8 py-4 rounded-xl font-semibold hover:bg-red-700 transition text-center">
+                            Call 089 451 6403
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- FOOTER CONTENT -->
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                    <!-- BRAND -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-5">
+                            Right Hands
+                        </h3>
+
+                        <p class="text-gray-400 leading-relaxed">
+                            Professional renovation services for homes, commercial spaces, bathrooms, tiling, flooring,
+                            and accessible living solutions.
+                        </p>
+                    </div>
+
+
+                    <!-- SERVICES -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-5">
+                            Services
+                        </h4>
+
+                        <ul class="space-y-3 text-gray-400">
+                            <li><a href="./residential.html" class="hover:text-red-500 transition">Residential
+                                    Renovations</a></li>
+                            <li><a href="./commercial.html" class="hover:text-red-500 transition">Commercial
+                                    Renovations</a></li>
+                            <li><a href="./tiling-flooring.html" class="hover:text-red-500 transition">Tiling &
+                                    Flooring</a></li>
+                            <li><a href="./disabled.html" class="hover:text-red-500 transition">Accessible Solutions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- CONTACT -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-5">
+                            Contact
+                        </h4>
+
+                        <ul class="space-y-3 text-gray-400">
+                            <li><a href="tel:+353894516403" class="hover:text-red-500 transition">089 451 6403</a></li>
+                            <li><a href="mailto:info@righthands.ie"
+                                    class="hover:text-red-500 transition">info@righthands.ie</a></li>
+                            <li>Carlow, Ireland</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- HOURS -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-5">
+                            Opening Hours
+                        </h4>
+
+                        <ul class="space-y-3 text-gray-400">
+                            <li>Monday - Friday: 8am - 6pm</li>
+                            <li>Saturday: Closed</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM -->
+                <div class="border-t border-white/10 mt-14 pt-8 text-center text-gray-500 text-sm">
+                    <p>
+                        © 2026 Right Hands. All rights reserved.
+                    </p>
+                </div>
+
+            </div>
+
+        </footer>
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>
