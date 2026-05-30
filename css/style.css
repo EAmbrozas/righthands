@@ -78,3 +78,21 @@ body {
     color: #4b5563;
     font-size: 15px;
 }
+
+/* Projects filter buttons */
+.project-filter-btn {
+    background: white;
+    color: #1f2937;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s ease;
+  }
+
+  .project-filter-btn:hover,
+  .active-filter {
+    background: #dc2626;
+    color: white;
+    border-color: #dc2626;
+  }

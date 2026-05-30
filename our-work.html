@@ -172,187 +172,63 @@
 
         <!-- OUR WORK SECTION -->
         <section class="relative bg-gray-50 py-28 lg:py-36 overflow-hidden">
-
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
                 <!-- FILTER BUTTONS -->
-                <div class="flex flex-wrap gap-3 mb-14">
-                    <button class="bg-red-600 text-white px-4 py-3 rounded-xl font-semibold">
+                <div id="projectFilters" class="flex flex-wrap gap-3 mb-14">
+                    <button class="project-filter-btn active-filter" data-category="all">
                         All Projects
                     </button>
 
-                    <button
-                        class="bg-white text-gray-800 px-4 py-3 rounded-xl font-semibold border border-gray-200 hover:border-red-600 hover:text-red-600 transition">
+                    <button class="project-filter-btn" data-category="residential">
                         Residential
                     </button>
 
-                    <button
-                        class="bg-white text-gray-800 px-4 py-3 rounded-xl font-semibold border border-gray-200 hover:border-red-600 hover:text-red-600 transition">
+                    <button class="project-filter-btn" data-category="commercial">
                         Commercial
                     </button>
 
-                    <button
-                        class="bg-white text-gray-800 px-4 py-3 rounded-xl font-semibold border border-gray-200 hover:border-red-600 hover:text-red-600 transition">
+                    <button class="project-filter-btn" data-category="tiling-flooring">
                         Tiling & Flooring
                     </button>
 
-                    <button
-                        class="bg-white text-gray-800 px-4 py-3 rounded-xl font-semibold border border-gray-200 hover:border-red-600 hover:text-red-600 transition">
+                    <button class="project-filter-btn" data-category="accessibility">
                         Accessibility
                     </button>
                 </div>
 
-
                 <!-- PROJECT GRID -->
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div id="projectGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- JS will insert project cards here -->
+                </div>
+                <!-- PROJECT MODAL -->
+                <div id="projectModal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+                    <div class="bg-white rounded-3xl max-w-5xl w-full overflow-hidden relative">
 
-                    <article
-                        class="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                        <div class="h-72 overflow-hidden">
-                            <img src="./images/work-residential-1.webp" alt="Residential renovation project"
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <button id="closeModal"
+                            class="absolute top-4 right-4 z-10 bg-white w-10 h-10 rounded-full shadow">
+                            ✕
+                        </button>
+
+                        <img id="modalMainImage" src="" alt="" class="w-full h-[500px] object-cover">
+
+                        <div id="modalThumbnails" class="flex gap-3 p-4 overflow-x-auto">
                         </div>
 
-                        <div class="p-8">
-                            <span class="text-sm font-semibold tracking-[0.18em] uppercase text-red-600">
-                                Residential
-                            </span>
+                        <div class="flex justify-between p-4">
+                            <button id="prevImage" class="px-4 py-2 bg-gray-100 rounded-xl">
+                                Previous
+                            </button>
 
-                            <h3 class="text-2xl font-bold text-gray-900 mt-3 mb-4">
-                                Modern Home Renovation
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                A clean residential upgrade focused on modern finishes,
-                                improved functionality, and long-lasting workmanship.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article
-                        class="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                        <div class="h-72 overflow-hidden">
-                            <img src="./images/work-bathroom-1.webp" alt="Bathroom renovation project"
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                            <button id="nextImage" class="px-4 py-2 bg-gray-100 rounded-xl">
+                                Next
+                            </button>
                         </div>
 
-                        <div class="p-8">
-                            <span class="text-sm font-semibold tracking-[0.18em] uppercase text-red-600">
-                                Bathroom
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-gray-900 mt-3 mb-4">
-                                Bathroom Transformation
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                Complete bathroom renovation with tiling, modern fixtures,
-                                and a high-quality professional finish.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article
-                        class="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                        <div class="h-72 overflow-hidden">
-                            <img src="./images/work-commercial-1.webp" alt="Commercial renovation project"
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        </div>
-
-                        <div class="p-8">
-                            <span class="text-sm font-semibold tracking-[0.18em] uppercase text-red-600">
-                                Commercial
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-gray-900 mt-3 mb-4">
-                                Commercial Fit-Out
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                Durable and professional commercial renovation work designed
-                                for everyday use and clean presentation.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article
-                        class="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                        <div class="h-72 overflow-hidden">
-                            <img src="./images/work-tiling-1.webp" alt="Tiling and flooring project"
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        </div>
-
-                        <div class="p-8">
-                            <span class="text-sm font-semibold tracking-[0.18em] uppercase text-red-600">
-                                Tiling & Flooring
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-gray-900 mt-3 mb-4">
-                                Precision Tiling Work
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                Detailed tiling and flooring installation completed with
-                                accuracy, durability, and a premium finish.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article
-                        class="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                        <div class="h-72 overflow-hidden">
-                            <img src="./images/work-accessible-1.webp" alt="Accessible renovation project"
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        </div>
-
-                        <div class="p-8">
-                            <span class="text-sm font-semibold tracking-[0.18em] uppercase text-red-600">
-                                Accessibility
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-gray-900 mt-3 mb-4">
-                                Accessible Bathroom Solution
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                A practical accessible renovation designed around comfort,
-                                safety, mobility, and everyday independence.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article
-                        class="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-                        <div class="h-72 overflow-hidden">
-                            <img src="./images/work-renovation-1.webp" alt="General renovation project"
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        </div>
-
-                        <div class="p-8">
-                            <span class="text-sm font-semibold tracking-[0.18em] uppercase text-red-600">
-                                Renovation
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-gray-900 mt-3 mb-4">
-                                Complete Interior Upgrade
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                A full interior improvement project completed with careful planning,
-                                clean finishes, and reliable workmanship.
-                            </p>
-                        </div>
-                    </article>
-
+                    </div>
                 </div>
 
             </div>
-
         </section>
     </main>
     <!-- FOOTER -->
@@ -469,6 +345,7 @@
 
     </footer>
     <script src="./js/nav.js"></script>
+    <script src="./js/projects.js"></script>
 </body>
 
 </html>
