@@ -1,87 +1,186 @@
 const projects = [
   {
-    title: "Modern Home Renovation",
-    label: "Residential",
-    categories: ["residential", "renovation"],
-    coverImage: "./images/acc.jpeg",
+    title: "Bathroom Showroom Installation",
+    label: "Commercial Showroom",
+    categories: ["commercial", "tiling-flooring", "bathroom"],
+    coverImage:
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-1.webp",
     images: [
-      "./images/acc.jpeg",
-      "./images/desktop.png",
-      "./images/flooring-desktop.jpeg",
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-1.webp",
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-2.webp",
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-3.webp",
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-4.webp",
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-5.webp",
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-6.webp",
+      "./images/our-work/projects/bathroom-showroom-installation/bathroom-showroom-installation-7.webp",
     ],
-    alt: "Residential renovation project",
+    alt: "Bathroom showroom installation with fixtures and tiling",
     description:
-      "A clean residential upgrade focused on modern finishes, improved functionality, and long-lasting workmanship.",
+      "A commercial showroom installation completed for a bathroom and tiling supplier, featuring multiple bathroom fixtures, display areas, and professional tiling finishes.",
   },
   {
-    title: "Bathroom Transformation",
-    label: "Bathroom",
-    categories: ["residential", "tiling-flooring", "renovation"],
-    coverImage: "./images/work-bathroom-1.webp",
-    images: [
-      "./images/work-bathroom-1.webp",
-      "./images/work-bathroom-2.webp",
-      "./images/work-bathroom-3.webp",
-    ],
-    alt: "Bathroom renovation project",
-    description:
-      "Complete bathroom renovation with tiling, modern fixtures, and a high-quality professional finish.",
-  },
-  {
-    title: "Commercial Fit-Out",
-    label: "Commercial",
-    categories: ["commercial", "renovation"],
-    coverImage: "./images/work-commercial-1.webp",
-    images: [
-      "./images/work-commercial-1.webp",
-      "./images/work-commercial-2.webp",
-      "./images/work-commercial-3.webp",
-    ],
-    alt: "Commercial renovation project",
-    description:
-      "Durable and professional commercial renovation work designed for everyday use and clean presentation.",
-  },
-  {
-    title: "Precision Tiling Work",
+    title: "Kitchen Floor Tiling Installation",
     label: "Tiling & Flooring",
     categories: ["tiling-flooring", "residential"],
-    coverImage: "./images/work-tiling-1.webp",
+
+    coverImage:
+      "./images/our-work/projects/kitchen-floor-tiling/kitchen-floor-tiling-1.webp",
+
     images: [
-      "./images/work-tiling-1.webp",
-      "./images/work-tiling-2.webp",
-      "./images/work-tiling-3.webp",
+      "./images/our-work/projects/kitchen-floor-tiling/kitchen-floor-tiling-1.webp",
+      "./images/our-work/projects/kitchen-floor-tiling/kitchen-floor-tiling-2.webp",
+      "./images/our-work/projects/kitchen-floor-tiling/kitchen-floor-tiling-3.webp",
+      "./images/our-work/projects/kitchen-floor-tiling/kitchen-floor-tiling-4.webp",
     ],
-    alt: "Tiling and flooring project",
+
+    alt: "Kitchen floor tiling installation",
+
     description:
-      "Detailed tiling and flooring installation completed with accuracy, durability, and a premium finish.",
+      "Professional kitchen floor tiling completed with precise alignment, clean grout lines, and a durable finish designed to withstand everyday family use.",
   },
   {
-    title: "Accessible Bathroom Solution",
+    title: "Complete Shower Room Remodel",
+    label: "Bathroom Renovation",
+    categories: ["residential", "bathroom", "tiling-flooring"],
+
+    coverImage:
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-1.webp",
+
+    images: [
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-1.webp",
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-2.webp",
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-3.webp",
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-4.webp",
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-5.webp",
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-6.webp",
+      "./images/our-work/projects/complete-shower-room-remodel/shower-remodel-7.webp",
+    ],
+
+    alt: "Complete shower room remodel with walk-in shower",
+
+    description:
+      "A full shower room transformation featuring new floor and wall tiling, modern sanitary ware, premium fixtures, and a spacious walk-in shower designed for both style and functionality.",
+  },
+  {
+    title: "Shower Room Makeover",
+    label: "Bathroom Renovation",
+    categories: ["residential", "bathroom", "tiling-flooring"],
+
+    coverImage:
+      "./images/our-work/projects/shower-room-makeover/shower-makeover-1.webp",
+
+    images: [
+      "./images/our-work/projects/shower-room-makeover/shower-makeover-1.webp",
+      "./images/our-work/projects/shower-room-makeover/shower-makeover-2.webp",
+      "./images/our-work/projects/shower-room-makeover/shower-makeover-3.webp",
+      "./images/our-work/projects/shower-room-makeover/shower-makeover-4.webp",
+      "./images/our-work/projects/shower-room-makeover/shower-makeover-5.webp",
+    ],
+
+    alt: "Shower room makeover",
+
+    description:
+      "Complete shower room refurbishment including new wall and floor tiles, modern fixtures, upgraded fittings, and a professionally installed shower for a fresh contemporary finish.",
+  },
+  {
+    title: "Professional Flooring Installation",
+    label: "Tiling & Flooring",
+    categories: ["residential", "tiling-flooring"],
+
+    coverImage:
+      "./images/our-work/projects/flooring-installation/flooring-1.webp",
+
+    images: [
+      "./images/our-work/projects/flooring-installation/flooring-1.webp",
+      "./images/our-work/projects/flooring-installation/flooring-2.webp",
+      "./images/our-work/projects/flooring-installation/flooring-3.webp",
+    ],
+
+    alt: "Professional flooring installation",
+
+    description:
+      "A complete flooring installation completed with precision and attention to detail, delivering a durable, level finish that enhances the appearance and functionality of the space.",
+  },
+  {
+    title: "Complete Shower Room Renovation",
+    label: "Bathroom Renovation",
+    categories: ["residential", "bathroom", "tiling-flooring"],
+
+    coverImage:
+      "./images/our-work/projects/complete-shower-room-renovation/bathroom-renovation-1.webp",
+
+    images: [
+      "./images/our-work/projects/complete-shower-room-renovation/bathroom-renovation-1.webp",
+      "./images/our-work/projects/complete-shower-room-renovation/bathroom-renovation-2.webp",
+      "./images/our-work/projects/complete-shower-room-renovation/bathroom-renovation-3.webp",
+      "./images/our-work/projects/complete-shower-room-renovation/bathroom-renovation-4.webp",
+      "./images/our-work/projects/complete-shower-room-renovation/bathroom-renovation-5.webp",
+    ],
+
+    alt: "Complete shower room renovation",
+
+    description:
+      "A full shower room renovation featuring complete wall and floor retiling, a new shower installation, modern fixtures and fittings, and high-quality finishing touches for a clean contemporary look.",
+  },
+  {
+    title: "Accessible Commercial Washroom Project",
     label: "Accessibility",
-    categories: ["accessibility", "residential", "tiling-flooring"],
-    coverImage: "./images/work-accessible-1.webp",
+    categories: ["commercial", "accessibility", "bathroom", "tiling-flooring"],
+
+    coverImage:
+      "./images/our-work/projects/accessible-commercial-washroom-project/commercial-dissabled-restroom-shower-1.webp",
+
     images: [
-      "./images/work-accessible-1.webp",
-      "./images/work-accessible-2.webp",
-      "./images/work-accessible-3.webp",
+      "./images/our-work/projects/accessible-commercial-washroom-project/commercial-dissabled-restroom-shower-1.webp",
+      "./images/our-work/projects/accessible-commercial-washroom-project/commercial-dissabled-restroom-shower-2.webp",
+      "./images/our-work/projects/accessible-commercial-washroom-project/commercial-dissabled-restroom-shower-3.webp",
+      "./images/our-work/projects/accessible-commercial-washroom-project/commercial-dissabled-restroom-shower-4.webp",
+      "./images/our-work/projects/accessible-commercial-washroom-project/commercial-dissabled-restroom-shower-5.webp",
     ],
-    alt: "Accessible renovation project",
+
+    alt: "Accessible commercial washroom and shower facility",
+
     description:
-      "A practical accessible renovation designed around comfort, safety, mobility, and everyday independence.",
+      "A fully accessible commercial washroom and shower installation completed to a high professional standard, featuring premium tiling, accessible fixtures, grab rails, sanitary ware, and a spacious shower area tailored to users with reduced mobility.",
   },
   {
-    title: "Complete Interior Upgrade",
-    label: "Renovation",
-    categories: ["residential", "renovation"],
-    coverImage: "./images/work-renovation-1.webp",
+    title: "Designer Shower Retiling & Installation",
+    label: "Bathroom Renovation",
+    categories: ["residential", "bathroom", "tiling-flooring"],
+
+    coverImage:
+      "./images/our-work/projects/designer-shower-retiling-installation/shower-remodel-1.webp",
+
     images: [
-      "./images/work-renovation-1.webp",
-      "./images/work-renovation-2.webp",
-      "./images/work-renovation-3.webp",
+      "./images/our-work/projects/designer-shower-retiling-installation/shower-remodel-1.webp",
+      "./images/our-work/projects/designer-shower-retiling-installation/shower-remodel-2.webp",
+      "./images/our-work/projects/designer-shower-retiling-installation/shower-remodel-3.webp",
     ],
-    alt: "General renovation project",
+
+    alt: "Shower renovation with white honeycomb tiles",
+
     description:
-      "A full interior improvement project completed with careful planning, clean finishes, and reliable workmanship.",
+      "A stylish shower renovation featuring elegant white honeycomb wall tiles, complete retiling, a new shower installation, fixtures and fittings. The unique tile design creates a bright, contemporary finish while maintaining durability and easy maintenance.",
+  },
+  {
+    title: "Professional Floor Tiling Project",
+    label: "Tiling & Flooring",
+    categories: ["residential", "tiling-flooring"],
+
+    coverImage:
+      "./images/our-work/projects/professional-floor-tiling-project/floor-tiling-1.webp",
+
+    images: [
+      "./images/our-work/projects/professional-floor-tiling-project/floor-tiling-1.webp",
+      "./images/our-work/projects/professional-floor-tiling-project/floor-tiling-2.webp",
+      "./images/our-work/projects/professional-floor-tiling-project/floor-tiling-3.webp",
+      "./images/our-work/projects/professional-floor-tiling-project/floor-tiling-4.webp",
+    ],
+
+    alt: "Professional floor tiling installation",
+
+    description:
+      "Expert floor tiling completed with precise tile alignment, clean grout lines, and a durable finish. The finished floor provides a modern appearance while delivering long-lasting performance for everyday use.",
   },
 ];
 
@@ -179,8 +278,7 @@ function closeProjectModal() {
 }
 
 function updateModalImage() {
-  modalMainImage.src =
-    activeProject.images[activeImageIndex];
+  modalMainImage.src = activeProject.images[activeImageIndex];
 
   modalThumbnails.innerHTML = "";
 
@@ -206,16 +304,13 @@ function updateModalImage() {
   });
 }
 
-document.querySelectorAll(".view-project-btn")
-  .forEach(btn => {
-    btn.addEventListener("click", () => {
-      openProjectModal(
-        Number(btn.dataset.projectIndex)
-      );
-    });
+document.querySelectorAll(".view-project-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    openProjectModal(Number(btn.dataset.projectIndex));
   });
+});
 
-  nextImageBtn.addEventListener("click", () => {
+nextImageBtn.addEventListener("click", () => {
   activeImageIndex++;
 
   if (activeImageIndex >= activeProject.images.length) {
@@ -229,8 +324,7 @@ prevImageBtn.addEventListener("click", () => {
   activeImageIndex--;
 
   if (activeImageIndex < 0) {
-    activeImageIndex =
-      activeProject.images.length - 1;
+    activeImageIndex = activeProject.images.length - 1;
   }
 
   updateModalImage();
