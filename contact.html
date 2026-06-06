@@ -250,7 +250,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
                     <!-- FORM -->
-                    <div class="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 lg:p-10">
+                    <form id="contactForm" action="https://formsubmit.co/info@righthands.ie" method="POST" class="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 lg:p-10">
 
                         <div class="mb-10">
                             <span
@@ -273,34 +273,34 @@
                             value="https://righthands.ie/thank-you.html"> <!-- SUCCESS / ERROR MESSAGE -->
                         <div id="formMessage" class="hidden rounded-2xl px-5 py-4 text-sm font-semibold"></div>
                         <!-- NAME -->
-                        <div> <label for="name" class="block text-sm font-semibold text-gray-800 mb-3"> Name </label>
+                        <div> <label for="name" class="block text-sm font-semibold text-gray-800 mb-2 mt-5"> Name </label>
                             <input id="name" type="text" name="name" placeholder="Enter your name"
                                 class="form-input w-full rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 text-gray-900 outline-none focus:border-red-600 focus:bg-white transition duration-300">
                             <p class="error-message hidden mt-2 text-sm text-red-600"> Please enter your name. </p>
                         </div> <!-- EMAIL -->
-                        <div> <label for="email" class="block text-sm font-semibold text-gray-800 mb-3"> Email Address
+                        <div> <label for="email" class="block text-sm font-semibold text-gray-800 mb-2 mt-5"> Email Address
                             </label> <input id="email" type="email" name="email" placeholder="Enter your email address"
                                 class="form-input w-full rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 text-gray-900 outline-none focus:border-red-600 focus:bg-white transition duration-300">
                             <p class="error-message hidden mt-2 text-sm text-red-600"> Please enter a valid email
                                 address. </p>
                         </div> <!-- PHONE -->
-                        <div> <label for="phone" class="block text-sm font-semibold text-gray-800 mb-3"> Phone Number
+                        <div> <label for="phone" class="block text-sm font-semibold text-gray-800 mb-2 mt-5"> Phone Number
                             </label> <input id="phone" type="tel" name="phone" placeholder="Enter your phone number"
                                 class="form-input w-full rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 text-gray-900 outline-none focus:border-red-600 focus:bg-white transition duration-300">
                             <p class="error-message hidden mt-2 text-sm text-red-600"> Please enter your phone number.
                             </p>
                         </div> <!-- MESSAGE -->
-                        <div> <label for="message" class="block text-sm font-semibold text-gray-800 mb-3"> Project
+                        <div> <label for="message" class="block text-sm font-semibold text-gray-800 mb-2 mt-5"> Project
                                 Details </label> <textarea id="message" name="message" rows="7"
                                 placeholder="Tell us about your renovation project..."
                                 class="form-input w-full rounded-2xl border border-gray-200 bg-gray-50 px-5 py-4 text-gray-900 outline-none resize-none focus:border-red-600 focus:bg-white transition duration-300"></textarea>
                             <p class="error-message hidden mt-2 text-sm text-red-600"> Please tell us about your
                                 project. </p>
                         </div> <!-- SUBMIT --> <button id="submitButton" type="submit"
-                            class="w-full bg-gray-900 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-red-600 transition duration-300 shadow-lg">
+                            class="w-full bg-gray-900 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-red-600 transition duration-300 shadow-lg mt-2">
                             Send Message </button>
 
-                    </div>
+                    </form>
 
 
                     <!-- CONTACT INFO -->
