@@ -1,119 +1,123 @@
-const contactForm = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
-const submitButton = document.getElementById("submitButton");
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+    const submitButton = document.getElementById("submitButton");
 
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const phoneInput = document.getElementById("phone");
-const messageInput = document.getElementById("message");
+    if (!contactForm) return;
 
-const inputs = [nameInput, emailInput, phoneInput, messageInput];
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phone");
+    const messageInput = document.getElementById("message");
 
-function showError(input) {
-    const errorMessage = input.parentElement.querySelector(".error-message");
+    const inputs = [nameInput, emailInput, phoneInput, messageInput];
 
-    input.classList.remove("border-gray-200");
-    input.classList.add("border-red-600", "bg-red-50");
+    function showError(input) {
+        const errorMessage = input.parentElement.querySelector(".error-message");
 
-    if (errorMessage) {
-        errorMessage.classList.remove("hidden");
-    }
-}
+        input.classList.remove("border-gray-200");
+        input.classList.add("border-red-600", "bg-red-50");
 
-function clearError(input) {
-    const errorMessage = input.parentElement.querySelector(".error-message");
-
-    input.classList.remove("border-red-600", "bg-red-50");
-    input.classList.add("border-gray-200");
-
-    if (errorMessage) {
-        errorMessage.classList.add("hidden");
-    }
-}
-
-function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-function validateForm() {
-    let isValid = true;
-
-    inputs.forEach((input) => {
-        clearError(input);
-
-        if (input.value.trim() === "") {
-            showError(input);
-            isValid = false;
+        if (errorMessage) {
+            errorMessage.classList.remove("hidden");
         }
-    });
-
-    if (emailInput.value.trim() !== "" && !isValidEmail(emailInput.value.trim())) {
-        showError(emailInput);
-        isValid = false;
     }
 
-    return isValid;
-}
+    function clearError(input) {
+        const errorMessage = input.parentElement.querySelector(".error-message");
 
-inputs.forEach((input) => {
-    input.addEventListener("input", () => {
-        if (input.value.trim() !== "") {
+        input.classList.remove("border-red-600", "bg-red-50");
+        input.classList.add("border-gray-200");
+
+        if (errorMessage) {
+            errorMessage.classList.add("hidden");
+        }
+    }
+
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function validateForm() {
+        let isValid = true;
+
+        inputs.forEach((input) => {
             clearError(input);
-        }
-    });
-});
 
-contactForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    formMessage.classList.add("hidden");
-
-    if (!validateForm()) {
-        formMessage.textContent = "Please fill in all required fields before sending.";
-        formMessage.className =
-            "rounded-2xl px-5 py-4 text-sm font-semibold bg-red-50 text-red-700 border border-red-200";
-        return;
-    }
-
-    submitButton.textContent = "Sending...";
-    submitButton.disabled = true;
-    submitButton.classList.add("opacity-70", "cursor-not-allowed");
-
-    const formData = new FormData(contactForm);
-
-    try {
-        const response = await fetch(contactForm.action, {
-            method: "POST",
-            body: formData,
-            headers: {
-                Accept: "application/json",
-            },
+            if (input.value.trim() === "") {
+                showError(input);
+                isValid = false;
+            }
         });
 
-        if (!response.ok) {
-            throw new Error("Form submission failed");
+        if (emailInput.value.trim() !== "" && !isValidEmail(emailInput.value.trim())) {
+            showError(emailInput);
+            isValid = false;
         }
 
-        setTimeout(() => {
-            formMessage.textContent =
-                "Thank you. Your message has been sent successfully.";
-            formMessage.className =
-                "rounded-2xl px-5 py-4 text-sm font-semibold bg-green-50 text-green-700 border border-green-200";
+        return isValid;
+    }
 
-            contactForm.reset();
+    inputs.forEach((input) => {
+        input.addEventListener("input", () => {
+            if (input.value.trim() !== "") {
+                clearError(input);
+            }
+        });
+    });
+
+    contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        formMessage.classList.add("hidden");
+
+        if (!validateForm()) {
+            formMessage.textContent = "Please fill in all required fields before sending.";
+            formMessage.className =
+                "rounded-2xl px-5 py-4 text-sm font-semibold bg-red-50 text-red-700 border border-red-200";
+            return;
+        }
+
+        submitButton.textContent = "Sending...";
+        submitButton.disabled = true;
+        submitButton.classList.add("opacity-70", "cursor-not-allowed");
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error("Form submission failed");
+            }
+
+            setTimeout(() => {
+                formMessage.textContent =
+                    "Thank you. Your message has been sent successfully.";
+                formMessage.className =
+                    "rounded-2xl px-5 py-4 text-sm font-semibold bg-green-50 text-green-700 border border-green-200";
+
+                contactForm.reset();
+
+                submitButton.textContent = "Send Message";
+                submitButton.disabled = false;
+                submitButton.classList.remove("opacity-70", "cursor-not-allowed");
+            }, 1000);
+        } catch (error) {
+            formMessage.textContent =
+                "Something went wrong. Please try again or contact us directly.";
+            formMessage.className =
+                "rounded-2xl px-5 py-4 text-sm font-semibold bg-red-50 text-red-700 border border-red-200";
 
             submitButton.textContent = "Send Message";
             submitButton.disabled = false;
             submitButton.classList.remove("opacity-70", "cursor-not-allowed");
-        }, 1000);
-    } catch (error) {
-        formMessage.textContent =
-            "Something went wrong. Please try again or contact us directly.";
-        formMessage.className =
-            "rounded-2xl px-5 py-4 text-sm font-semibold bg-red-50 text-red-700 border border-red-200";
-
-        submitButton.textContent = "Send Message";
-        submitButton.disabled = false;
-        submitButton.classList.remove("opacity-70", "cursor-not-allowed");
-    }
+        }
+    });
 });
