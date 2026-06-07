@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://righthands.ie/sitemap.xml
