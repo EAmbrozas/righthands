@@ -184,18 +184,30 @@ const projects = [
   },
 ];
 
+// Show 6 projects first, then load more
 const projectGrid = document.querySelector("#projectGrid");
 const filterButtons = document.querySelectorAll(".project-filter-btn");
+const loadMoreProjectsBtn = document.querySelector("#loadMoreProjects");
 
-function renderProjects(category = "all") {
+let currentCategory = "all";
+let visibleProjects = 6;
+let currentFilteredProjects = [];
+
+function getFilteredProjects(category = "all") {
+  return category === "all"
+    ? projects
+    : projects.filter((project) => project.categories.includes(category));
+}
+
+function renderProjects(category = currentCategory) {
   projectGrid.innerHTML = "";
 
-  const filteredProjects =
-    category === "all"
-      ? projects
-      : projects.filter((project) => project.categories.includes(category));
+  currentFilteredProjects = getFilteredProjects(category);
+  const projectsToShow = currentFilteredProjects.slice(0, visibleProjects);
 
-  filteredProjects.forEach((project, index) => {
+  projectsToShow.forEach((project) => {
+    const originalIndex = projects.indexOf(project);
+
     const card = document.createElement("article");
 
     card.className =
@@ -206,6 +218,7 @@ function renderProjects(category = "all") {
         <img 
           src="${project.coverImage}" 
           alt="${project.alt}"
+          loading="lazy"
           class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
         >
       </div>
@@ -224,32 +237,41 @@ function renderProjects(category = "all") {
         </p>
 
         <button
-  class="view-project-btn inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition"
-  data-project-index="${index}"
->
-  View Project Photos →
-</button>
+          class="view-project-btn inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition"
+          data-project-index="${originalIndex}">
+          View Project Photos →
+        </button>
       </div>
     `;
 
     projectGrid.appendChild(card);
   });
+
+  if (visibleProjects >= currentFilteredProjects.length) {
+    loadMoreProjectsBtn.classList.add("hidden");
+  } else {
+    loadMoreProjectsBtn.classList.remove("hidden");
+  }
 }
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const category = button.dataset.category;
+    currentCategory = button.dataset.category;
+    visibleProjects = 6;
 
     filterButtons.forEach((btn) => btn.classList.remove("active-filter"));
     button.classList.add("active-filter");
 
-    renderProjects(category);
+    renderProjects(currentCategory);
   });
 });
 
-renderProjects();
+loadMoreProjectsBtn.addEventListener("click", () => {
+  visibleProjects += 6;
+  renderProjects(currentCategory);
+});
 
-// Projects Modal
+// Project modal
 const modal = document.querySelector("#projectModal");
 const closeModalBtn = document.querySelector("#closeModal");
 
@@ -279,6 +301,7 @@ function closeProjectModal() {
 
 function updateModalImage() {
   modalMainImage.src = activeProject.images[activeImageIndex];
+  modalMainImage.alt = activeProject.alt;
 
   modalThumbnails.innerHTML = "";
 
@@ -286,8 +309,9 @@ function updateModalImage() {
     const thumb = document.createElement("img");
 
     thumb.src = image;
+    thumb.alt = `${activeProject.title} image ${index + 1}`;
     thumb.className =
-      "w-24 h-24 object-cover rounded-xl cursor-pointer border-2";
+      "w-24 h-24 object-cover rounded-xl cursor-pointer border-2 shrink-0";
 
     if (index === activeImageIndex) {
       thumb.classList.add("border-red-600");
@@ -304,10 +328,12 @@ function updateModalImage() {
   });
 }
 
-document.querySelectorAll(".view-project-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    openProjectModal(Number(btn.dataset.projectIndex));
-  });
+projectGrid.addEventListener("click", (e) => {
+  const btn = e.target.closest(".view-project-btn");
+
+  if (!btn) return;
+
+  openProjectModal(Number(btn.dataset.projectIndex));
 });
 
 nextImageBtn.addEventListener("click", () => {
@@ -337,3 +363,5 @@ modal.addEventListener("click", (e) => {
     closeProjectModal();
   }
 });
+
+renderProjects();
