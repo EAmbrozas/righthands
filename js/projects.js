@@ -182,6 +182,236 @@ const projects = [
     description:
       "Expert floor tiling completed with precise tile alignment, clean grout lines, and a durable finish. The finished floor provides a modern appearance while delivering long-lasting performance for everyday use.",
   },
+  {
+  title: "Modern Bathroom Renovation with Bath & Black Fixtures",
+  label: "Bathroom Renovation",
+  categories: ["residential", "bathroom", "tiling-flooring"],
+
+  coverImage:
+    "./images/our-work/projects/modern-bathroom-renovation-with-bath-black-fixtures/bathroom-renovation-1.webp",
+
+  images: [
+    "./images/our-work/projects/modern-bathroom-renovation-with-bath-black-fixtures/bathroom-renovation-1.webp",
+    "./images/our-work/projects/modern-bathroom-renovation-with-bath-black-fixtures/bathroom-renovation-2.webp",
+    "./images/our-work/projects/modern-bathroom-renovation-with-bath-black-fixtures/bathroom-renovation-3.webp",
+    "./images/our-work/projects/modern-bathroom-renovation-with-bath-black-fixtures/bathroom-renovation-4.webp",
+    "./images/our-work/projects/modern-bathroom-renovation-with-bath-black-fixtures/bathroom-renovation-5.webp",
+  ],
+
+  alt: "Modern bathroom renovation with grey porcelain tiles, bath and black fixtures",
+
+  description:
+    "A complete bathroom renovation featuring large-format grey porcelain tiles, a modern bath with a black framed shower screen, matte black fixtures, a contemporary vanity unit, and premium fittings throughout. Designed with clean lines and high-quality finishes, the space offers a stylish, functional bathroom built for everyday comfort and long-lasting durability.",
+},
+{
+  title: "Commercial Washroom Renovation & Refurbishment",
+  label: "Commercial Renovation",
+  categories: ["commercial"],
+
+  coverImage:
+    "./images/our-work/projects/commercial-washroom-renovation-refurbishment/commercial-restroom-makeover-1.webp",
+
+  images: [
+    "./images/our-work/projects/commercial-washroom-renovation-refurbishment/commercial-restroom-makeover-1.webp",
+    "./images/our-work/projects/commercial-washroom-renovation-refurbishment/commercial-restroom-makeover-2.webp",
+    "./images/our-work/projects/commercial-washroom-renovation-refurbishment/commercial-restroom-makeover-3.webp",
+  ],
+
+  alt: "Modern commercial washroom renovation with vanity units and cubicles",
+
+  description:
+    "A professional commercial washroom renovation featuring new wall tiling, modern vanity units, spacious mirrors, upgraded cubicles, and durable finishes. Designed to provide a clean, practical, and long-lasting space for daily commercial use.",
+},
+{
+  title: "Accessible Bathroom & Walk-In Shower Renovation",
+  label: "Accessible Bathroom",
+  categories: ["residential", "accessibility"],
+
+  coverImage:
+    "./images/our-work/projects/accessible-bathroom-walk-in-shower-renovation/disabled-shower-1.webp",
+
+  images: [
+    "./images/our-work/projects/accessible-bathroom-walk-in-shower-renovation/disabled-shower-1.webp",
+    "./images/our-work/projects/accessible-bathroom-walk-in-shower-renovation/disabled-shower-2.webp",
+  ],
+
+  alt: "Accessible bathroom renovation with walk-in shower and safety grab rails",
+
+  description:
+    "An accessible bathroom renovation featuring a spacious walk-in shower, safety grab rails, large marble-effect wall tiles, and modern fittings. Designed to provide comfort, safety, and everyday accessibility without compromising on style.",
+},
+{
+  title: "Contemporary Walk-In Shower Tiling",
+  label: "Bathroom Renovation",
+  categories: ["residential", "tiling-flooring"],
+
+  coverImage:
+    "./images/our-work/projects/contemporary-walk-in-shower-tiling/open-shower-tiling-1.webp",
+
+  images: [
+    "./images/our-work/projects/contemporary-walk-in-shower-tiling/open-shower-tiling-1.webp",
+    "./images/our-work/projects/contemporary-walk-in-shower-tiling/open-shower-tiling-2.webp",
+    "./images/our-work/projects/contemporary-walk-in-shower-tiling/open-shower-tiling-3.webp",
+    "./images/our-work/projects/contemporary-walk-in-shower-tiling/open-shower-tiling-4.webp",
+  ],
+
+  alt: "Modern walk-in shower with green wall tiles and marble-effect floor tiles",
+
+  description:
+    "A contemporary walk-in shower featuring glossy green wall tiles, marble-effect floor tiles, and premium chrome fittings. Finished with precision for a stylish, durable, and easy-to-maintain shower space.",
+},
+{
+  title: "Modern Cloakroom & WC Renovation",
+  label: "Bathroom Renovation",
+  categories: ["residential"],
+
+  coverImage:
+    "./images/our-work/projects/modern-cloakroom-wc-renovation/rest-room-1.webp",
+
+  images: [
+    "./images/our-work/projects/modern-cloakroom-wc-renovation/rest-room-1.webp",
+    "./images/our-work/projects/modern-cloakroom-wc-renovation/rest-room-2.webp",
+    "./images/our-work/projects/modern-cloakroom-wc-renovation/rest-room-3.webp",
+  ],
+
+  alt: "Modern cloakroom renovation with terracotta wall tiles and brushed brass fixtures",
+
+  description:
+    "A stylish cloakroom renovation featuring warm terracotta wall tiles, brushed brass fixtures, a contemporary wall-mounted basin, and elegant lighting. Finished with premium materials for a modern, welcoming space.",
+},
+{
+  title: "Modern WC Renovation with Marble-Effect Tiles",
+  label: "Bathroom Renovation",
+  categories: ["residential", "tiling-flooring"],
+
+  coverImage:
+    "./images/our-work/projects/modern-wc-renovation-marble-effect-tiles/restroom-tiling-1.webp",
+
+  images: [
+    "./images/our-work/projects/modern-wc-renovation-marble-effect-tiles/restroom-tiling-1.webp",
+    "./images/our-work/projects/modern-wc-renovation-marble-effect-tiles/restroom-tiling-2.webp",
+    "./images/our-work/projects/modern-wc-renovation-marble-effect-tiles/restroom-tiling-3.webp",
+  ],
+
+  alt: "Modern WC renovation with marble-effect porcelain tiles and wall-hung toilet",
+
+  description:
+    "A modern WC renovation featuring large marble-effect porcelain tiles, a wall-hung toilet, concealed cistern, and clean contemporary finishes. Designed to maximise space while creating a bright and elegant interior.",
+},
+{
+  title: "Modern Bathroom Shower Renovation",
+  label: "Bathroom Renovation",
+  categories: ["residential"],
+
+  coverImage:
+    "./images/our-work/projects/modern-bathroom-shower-renovation/shower-makeover-1.webp",
+
+  images: [
+    "./images/our-work/projects/modern-bathroom-shower-renovation/shower-makeover-1.webp",
+    "./images/our-work/projects/modern-bathroom-shower-renovation/shower-makeover-2.webp",
+    "./images/our-work/projects/modern-bathroom-shower-renovation/shower-makeover-3.webp",
+    "./images/our-work/projects/modern-bathroom-shower-renovation/shower-makeover-4.webp",
+    "./images/our-work/projects/modern-bathroom-shower-renovation/shower-makeover-5.webp",
+  ],
+
+  alt: "Modern bathroom renovation with dark stone-effect tiles and sliding shower enclosure",
+
+  description:
+    "A modern bathroom renovation featuring dark stone-effect tiles, a spacious sliding shower enclosure, LED mirror, and contemporary vanity unit. Finished with quality materials for a stylish and practical everyday bathroom.",
+},
+{
+  title: "Marble-Effect Bathroom Renovation",
+  label: "Bathroom Renovation",
+  categories: ["residential", "bathroom"],
+
+  coverImage:
+    "./images/our-work/projects/marble-effect-bathroom-renovation/shower-makeover-1.webp",
+
+  images: [
+    "./images/our-work/projects/marble-effect-bathroom-renovation/shower-makeover-1.webp",
+    "./images/our-work/projects/marble-effect-bathroom-renovation/shower-makeover-2.webp",
+  ],
+
+  alt: "Modern bathroom renovation with marble-effect porcelain tiles and glass shower enclosure",
+
+  description:
+    "A bright bathroom renovation featuring large marble-effect porcelain tiles, a sleek glass shower enclosure, and contemporary sanitaryware. Finished with clean lines for a modern and low-maintenance space.",
+},
+{
+  title: "Luxury Walk-In Shower Renovation",
+  label: "Bathroom Renovation",
+  categories: ["residential", "bathroom"],
+
+  coverImage:
+    "./images/our-work/projects/luxury-walk-in-shower-renovation/shower-refit-1.webp",
+
+  images: [
+    "./images/our-work/projects/luxury-walk-in-shower-renovation/shower-refit-1.webp",
+    "./images/our-work/projects/luxury-walk-in-shower-renovation/shower-refit-2.webp",
+    "./images/our-work/projects/luxury-walk-in-shower-renovation/shower-refit-3.webp",
+    "./images/our-work/projects/luxury-walk-in-shower-renovation/shower-refit-4.webp",
+  ],
+
+  alt: "Luxury walk-in shower renovation with black fixtures and feature wall tiles",
+
+  description:
+    "A stylish bathroom renovation featuring a walk-in shower, matte black fixtures, a striking feature wall, and modern sanitaryware. Finished with premium materials for a contemporary and elegant look.",
+},
+{
+  title: "Contemporary Bathroom Renovation with Walk-In Shower",
+  label: "Bathroom Renovation",
+  categories: ["residential", "bathroom", "accessibility"],
+
+  coverImage:
+    "./images/our-work/projects/contemporary-bathroom-renovation-walk-in-shower/shower-remodel-1.webp",
+
+  images: [
+    "./images/our-work/projects/contemporary-bathroom-renovation-walk-in-shower/shower-remodel-1.webp",
+    "./images/our-work/projects/contemporary-bathroom-renovation-walk-in-shower/shower-remodel-2.webp",
+    "./images/our-work/projects/contemporary-bathroom-renovation-walk-in-shower/shower-remodel-3.webp",
+    "./images/our-work/projects/contemporary-bathroom-renovation-walk-in-shower/shower-remodel-4.webp",
+  ],
+
+  alt: "Contemporary bathroom renovation with walk-in shower, marble-effect tiles and LED mirror",
+
+  description:
+    "A contemporary bathroom renovation featuring marble-effect wall tiles, a spacious walk-in shower, LED mirror, modern vanity unit, and chrome fittings. Designed to create a bright, practical, and elegant bathroom.",
+},
+{
+  title: "Modern Cloakroom Renovation with Feature Wall Tiles",
+  label: "Bathroom Renovation",
+  categories: ["residential", "bathroom"],
+
+  coverImage:
+    "./images/our-work/projects/modern-cloakroom-renovation-feature-wall/small-restroom-renovation-1.webp",
+
+  images: [
+    "./images/our-work/projects/modern-cloakroom-renovation-feature-wall/small-restroom-renovation-1.webp",
+    "./images/our-work/projects/modern-cloakroom-renovation-feature-wall/small-restroom-renovation-2.webp",
+  ],
+
+  alt: "Modern cloakroom renovation with botanical feature wall tiles and brushed brass radiator",
+
+  description:
+    "A modern cloakroom renovation featuring botanical feature wall tiles, a contemporary vanity unit, brushed brass radiator, and quality fittings. Designed to create a stylish and welcoming guest WC.",
+},
+{
+  title: "Contemporary Bathroom Renovation with Feature Tile Wall",
+  label: "Bathroom Renovation",
+  categories: ["residential", "bathroom"],
+
+  coverImage:
+    "./images/our-work/projects/contemporary-bathroom-feature-tile-wall/shower-remodel-1.webp",
+
+  images: [
+    "./images/our-work/projects/contemporary-bathroom-feature-tile-wall/shower-remodel-1.webp",
+  ],
+
+  alt: "Modern bathroom renovation with dark blue feature wall tiles and LED mirror",
+
+  description:
+    "A contemporary bathroom renovation featuring a striking blue feature tile wall, LED mirror, modern vanity unit, and premium fittings. Finished with clean lines for a stylish and practical space.",
+},
 ];
 
 // Show 6 projects first, then load more
